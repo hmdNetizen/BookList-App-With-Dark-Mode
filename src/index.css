@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+nav {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .toggle {
+  width: 80px;
+  height: 40px;
+  background: #3f3d3d;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: all 300ms ease-in-out;
+}
+
+.toggle .toggle-btn {
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background: #bf0cc9;
+}
+
+.toggle.active {
+  background: #bf0cc9;
+}
+
+.toggle.active > .toggle-btn {
+  margin-left: auto;
+  background: #3f3d3d;
+}
+
+section {
+  padding: 15px;
+  margin: auto;
+  width: 100%;
+}
+
+section p {
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section ul li {
+  line-height: 1.5;
+  padding: 10px 20px;
+  margin: 10px;
+  position: relative;
+}
+
+section li h4 {
+  margin: 0;
+}
+
+section li span {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+
+form {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+form > div {
+  margin: 10px 0;
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  color: #f2f2f2;
+  border: none;
+  padding: 7px 10px;
+  background: transparent;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  display: block;
+  margin: auto;
+  padding: 5px 25px;
+  margin-top: 15px;
+  border: none;
+  font-weight: bold;
+}
+
+form button:focus {
+  outline: none;
+}
+
+.secondary-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.fa-edit {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
