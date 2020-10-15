@@ -69,7 +69,7 @@ const BookForm = () => {
           onChange={handleInputChange}
         />
       </div>
-      <button> Add Book </button>
+      <button> {current !== null ? "Update Book" : "Add Book"} </button>
     </form>
   );
 };

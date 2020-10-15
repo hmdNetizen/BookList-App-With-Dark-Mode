@@ -11,7 +11,13 @@ const Navbar = () => {
     <nav style={{ background: theme.bg, color: theme.color }}>
       <div>
         <h2>Hameed's Reading List</h2>
-        <p>Currently you have {books.length} books to get through</p>
+        <p>
+          Currently you have{" "}
+          {`${
+            books.length > 1 ? `${books.length} books` : `${books.length} book`
+          }`}{" "}
+          to get through
+        </p>
       </div>
       <Fragment>
         <ToggleBtn toggleBtn={toggleTheme} />
